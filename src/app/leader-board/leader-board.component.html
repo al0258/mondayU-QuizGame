@@ -1,0 +1,22 @@
+<div class="card">
+  <h1 class="display-5 fw-bold center">Leaderboard</h1>
+  <div class="options">
+
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let option of staticArray; let indexOfelement=index;">
+          <th class="table-primary" scope="row">{{indexOfelement+1}}</th>
+          <td class="table-primary">{{option.name}}</td>
+          <td class="table-primary">{{option.score}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
